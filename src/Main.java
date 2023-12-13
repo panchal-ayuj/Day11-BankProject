@@ -1,4 +1,5 @@
 import model.Account;
+import model.Transaction;
 import repository.BankRepository;
 import manager.BankManager;
 import service.BankService;
@@ -44,5 +45,4 @@ public class Main {
         bankManager.applyLevyCharge();
         bankManager.applyInterest();
     }
-
 }

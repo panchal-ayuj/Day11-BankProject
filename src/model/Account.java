@@ -50,7 +50,7 @@ public class Account {
     }
     public void interest(){
         synchronized (this) {
-            balance = balance.add(balance.multiply(BigDecimal.valueOf(0.06)));
+            balance = balance.add(balance.multiply(BigDecimal.valueOf(0.06/365)));
         }
     }
     public void isKycDone(){
